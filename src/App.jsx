@@ -5,6 +5,7 @@ import heroImg from './assets/hero.png'
 import './App.css'
 import AddReg from './components/AddReg'
 import NavBar from './components/NavBar'
+import SearchStudent from './components/SearchStudent'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,6 +14,7 @@ function App() {
     <>
     
 <AddReg/>
+<SearchStudent/>
     </>
   )
 }
