@@ -7,16 +7,22 @@ import AddReg from './components/AddReg'
 import NavBar from './components/NavBar'
 import SearchStudent from './components/SearchStudent'
 import DeleteStudent from './components/DeleteStudent'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import ViewStudent from './components/ViewStudent'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-    
-<AddReg/>
-<SearchStudent/>
-<DeleteStudent/>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<AddReg/>}/>
+        <Route path='/search' element={<SearchStudent/>}/>
+        <Route path='/delete' element={<DeleteStudent/>}/>
+        <Route path='/view' element={<ViewStudent/>}/>
+      </Routes>
+      </BrowserRouter>
     </>
   )
 }
