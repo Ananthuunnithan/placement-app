@@ -1,9 +1,10 @@
 import React from 'react'
+import NavBar from './NavBar'
 
 const AddReg = () => {
     return (
         <div>
-
+            <NavBar />
             <div className="container mt-4 mb-4">
                 <div className="row">
                     <div className="col col-12">
